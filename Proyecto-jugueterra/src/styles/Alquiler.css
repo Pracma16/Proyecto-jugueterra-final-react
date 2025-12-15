@@ -1,0 +1,77 @@
+.alquiler-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 40px  20px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+}
+
+.alquiler-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.categoria-card {
+  background: #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.categoria-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 10px 10px 20px #b8b8b8, -10px -10px 20px #ffffff;
+}
+
+.categoria-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+}
+
+.categoria-card h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.categoria-card p {
+  color: #555;
+  font-size: 0.95rem;
+  min-height: 100px;
+}
+
+.btn-reservar {
+  margin-top: 15px;
+  background: linear-gradient(145deg, #d1d1d1, #f0f0f0);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  box-shadow: 5px 5px 10px #b8b8b8, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-reservar:hover {
+  background: linear-gradient(145deg, #f0f0f0, #d1d1d1);
+  transform: scale(1.05);
+}

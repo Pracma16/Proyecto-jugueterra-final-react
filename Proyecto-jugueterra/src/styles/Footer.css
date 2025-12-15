@@ -1,0 +1,77 @@
+.footer-container {
+
+  bottom: 0;
+  left: 0;
+  width: 100%;background: linear-gradient(to bottom, #f3f3f3, #dcdcdc);
+  box-shadow: 8px 8px 16px #b8b8b8, -8px -8px 16px #ffffff;
+  border-radius: 25px 25px 0 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 0;
+  z-index: 9999;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-text {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #e0e0e0, #cfcfcf);
+  box-shadow: 4px 4px 8px #b0b0b0, -4px -4px 8px #ffffff;
+  font-size: 1.1rem;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: inset 2px 2px 6px #b0b0b0, inset -2px -2px 6px #ffffff;
+}
+
+/* Hovers por red */
+.facebook:hover { color: #1877f2; }
+.instagram:hover { color: #d6249f; }
+.whatsapp:hover { color: #25d366; }
+.linkedin:hover { color: #0077b5; }
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .social-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,202 @@
+/* ======= NAVBAR BASE ======= */
+:root {
+  --bg-color: #e0e0e0;
+  --text-color: #333;
+  --shadow-dark: #bebebe;
+  --shadow-light: #ffffff;
+  --accent: #ff5252;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 40px;
+  background: #e0e0e0;
+  border-radius: 0 0 20px 20px;
+
+  box-shadow: 8px 8px 15px #bebebe,
+              -8px -8px 15px #ffffff;
+
+  font-family: "Segoe UI", sans-serif;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* ======= EFECTO DE VISIBILIDAD ======= */
+.navbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ======= LOGO ======= */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+.navbar-image {
+  height: 55px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(1px 2px 2px #bcbcbc);
+}
+
+.navbar-image:hover {
+  transform: scale(1.08);
+}
+
+/* ======= ENLACES ======= */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+  transition: all 0.25s ease;
+}
+
+.navbar-links li a:hover {
+  color: #1c1c1c;
+  box-shadow: inset 3px 3px 6px #bebebe,
+              inset -3px -3px 6px #ffffff;
+}
+
+/* ======= SECCIÓN USUARIO Y CARRITO ======= */
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* --- Carrito --- */
+.navbar-cart {
+  position: relative;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #555;
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.navbar-cart:hover {
+  box-shadow: inset 3px 3px 6px #bebebe,
+              inset -3px -3px 6px #ffffff;
+  transform: scale(1.05);
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #ff5252;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Usuario --- */
+.navbar-usuario {
+  background: #e0e0e0;
+  box-shadow: inset 2px 2px 5px #bebebe,
+              inset -2px -2px 5px #ffffff;
+  padding: 8px 14px;
+  border-radius: 14px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* --- Botones de sesión --- */
+.btn-login,
+.btn-logout {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 14px;
+  padding: 8px 16px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+  transition: all 0.25s ease;
+}
+
+.btn-login:hover,
+.btn-logout:hover {
+  box-shadow: inset 3px 3px 6px #bebebe,
+              inset -3px -3px 6px #ffffff;
+  color: #e63946;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 24px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar-links li a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .navbar-user {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.btn-theme {
+  background: var(--bg-color);
+  box-shadow: 5px 5px 10px var(--shadow-dark),
+              -5px -5px 10px var(--shadow-light);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+  box-shadow: inset 3px 3px 6px var(--shadow-dark),
+              inset -3px -3px 6px var(--shadow-light);
+}

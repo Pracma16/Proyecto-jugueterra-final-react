@@ -1,0 +1,50 @@
+.tarjeta {
+  background: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 380px;
+  margin: 50px auto;
+  box-shadow: 8px 8px 16px #b8b8b8, -8px -8px 16px #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tarjeta h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.tarjeta form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tarjeta input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  box-shadow: inset 2px 2px 5px #bfbfbf, inset -2px -2px 5px #ffffff;
+}
+
+.tarjeta button {
+  background-color: #555;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px #a0a0a0, -4px -4px 8px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tarjeta button:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta p {
+  color: #444;
+  text-align: center;
+}
